@@ -1,0 +1,7 @@
+[PID:12321:022 2016.05.10 14:51:42.072 TRACE InMemoryBus         ] SLOW BUS MSG [MainBus]: PurgeTimedOutRequests - 69ms. Handler: HttpService.
+[PID:12321:022 2016.05.10 14:51:42.090 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [MainQueue]: PurgeTimedOutRequests - 443ms. Q: 6/8.
+[PID:12321:025 2016.05.10 14:56:57.405 TRACE InMemoryBus         ] SLOW BUS MSG [SubscriptionsBus]: CheckPollTimeout - 53ms. Handler: SubscriptionsService.
+[PID:12321:013 2016.05.10 14:57:03.409 TRACE InMemoryBus         ] SLOW BUS MSG [SubscriptionsBus]: CheckPollTimeout - 52ms. Handler: SubscriptionsService.
+[PID:12321:020 2016.05.10 14:58:15.481 TRACE InMemoryBus         ] SLOW BUS MSG [PersistentSubscriptionsBus]: PersistentSubscriptionTimerTick - 64ms. Handler: PersistentSubscriptionService.
+[PID:12321:031 2016.05.10 14:59:43.564 TRACE InMemoryBus         ] SLOW BUS MSG [SubscriptionsBus]: CheckPollTimeout - 76ms. Handler: SubscriptionsService.
+[PID:12321:009 2016.05.10 23:38:06.098 TRACE QueuedHandlerThreadP] SLOW QUEUE MSG [StorageReaderQueue #2]: ReadStreamEventsForward - 217ms. Q: 0/0.

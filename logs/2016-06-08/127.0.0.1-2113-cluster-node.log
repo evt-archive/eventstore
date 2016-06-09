@@ -1,0 +1,577 @@
+[PID:22371:001 2016.06.08 04:29:36.524 INFO  ProgramBase`1       ] 
+ES VERSION:               3.6.1 (release-v3.6.1/7bea05d7670231fb4580625d3ffca16c77b166fa, Sat, 30 Apr 2016 19:36:25 +0300)
+OS:                       MacOS (Unix 14.3.0.0)
+RUNTIME:                  3.12.1 (tarball) (64-bit)
+GC:                       2 GENERATIONS
+LOGS:                     /Users/sbellware/tools/EventStore-OSS-MacOSX-v3.6.1/logs
+
+MODIFIED OPTIONS:
+
+	RUN PROJECTIONS:          System (Command Line)
+	MEM DB:                   True (Command Line)
+
+DEFAULT OPTIONS:
+
+	HELP:                     False (<DEFAULT>)
+	VERSION:                  False (<DEFAULT>)
+	LOG:                      logs (<DEFAULT>)
+	CONFIG:                   <empty> (<DEFAULT>)
+	DEFINES:                  <empty> (<DEFAULT>)
+	WHAT IF:                  False (<DEFAULT>)
+	START STANDARD PROJECTIONS: False (<DEFAULT>)
+	DISABLE HTTP CACHING:     False (<DEFAULT>)
+	MONO MIN THREADPOOL SIZE: 10 (<DEFAULT>)
+	INT IP:                   127.0.0.1 (<DEFAULT>)
+	EXT IP:                   127.0.0.1 (<DEFAULT>)
+	INT HTTP PORT:            2112 (<DEFAULT>)
+	EXT HTTP PORT:            2113 (<DEFAULT>)
+	INT TCP PORT:             1112 (<DEFAULT>)
+	INT SECURE TCP PORT:      0 (<DEFAULT>)
+	EXT TCP PORT:             1113 (<DEFAULT>)
+	EXT SECURE TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	EXT SECURE TCP PORT:      0 (<DEFAULT>)
+	EXT IP ADVERTISE AS:      <empty> (<DEFAULT>)
+	EXT TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	EXT HTTP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT IP ADVERTISE AS:      <empty> (<DEFAULT>)
+	INT SECURE TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT HTTP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT TCP HEARTBEAT TIMEOUT: 700 (<DEFAULT>)
+	EXT TCP HEARTBEAT TIMEOUT: 1000 (<DEFAULT>)
+	INT TCP HEARTBEAT INTERVAL: 700 (<DEFAULT>)
+	EXT TCP HEARTBEAT INTERVAL: 2000 (<DEFAULT>)
+	FORCE:                    False (<DEFAULT>)
+	CLUSTER SIZE:             1 (<DEFAULT>)
+	NODE PRIORITY:            0 (<DEFAULT>)
+	MIN FLUSH DELAY MS:       2 (<DEFAULT>)
+	COMMIT COUNT:             -1 (<DEFAULT>)
+	PREPARE COUNT:            -1 (<DEFAULT>)
+	ADMIN ON EXT:             True (<DEFAULT>)
+	STATS ON EXT:             True (<DEFAULT>)
+	GOSSIP ON EXT:            True (<DEFAULT>)
+	DISABLE SCAVENGE MERGING: False (<DEFAULT>)
+	SCAVENGE HISTORY MAX AGE: 30 (<DEFAULT>)
+	DISCOVER VIA DNS:         True (<DEFAULT>)
+	CLUSTER DNS:              fake.dns (<DEFAULT>)
+	CLUSTER GOSSIP PORT:      30777 (<DEFAULT>)
+	GOSSIP SEED:              <empty> (<DEFAULT>)
+	STATS PERIOD SEC:         30 (<DEFAULT>)
+	CACHED CHUNKS:            -1 (<DEFAULT>)
+	CHUNKS CACHE SIZE:        536871424 (<DEFAULT>)
+	MAX MEM TABLE SIZE:       1000000 (<DEFAULT>)
+	DB:                       data (<DEFAULT>)
+	INDEX:                    <empty> (<DEFAULT>)
+	SKIP DB VERIFY:           False (<DEFAULT>)
+	PROJECTION THREADS:       3 (<DEFAULT>)
+	WORKER THREADS:           5 (<DEFAULT>)
+	INT HTTP PREFIXES:        <empty> (<DEFAULT>)
+	EXT HTTP PREFIXES:        <empty> (<DEFAULT>)
+	ENABLE TRUSTED AUTH:      False (<DEFAULT>)
+	ADD INTERFACE PREFIXES:   True (<DEFAULT>)
+	CERTIFICATE STORE LOCATION: <empty> (<DEFAULT>)
+	CERTIFICATE STORE NAME:   <empty> (<DEFAULT>)
+	CERTIFICATE SUBJECT NAME: <empty> (<DEFAULT>)
+	CERTIFICATE THUMBPRINT:   <empty> (<DEFAULT>)
+	CERTIFICATE FILE:         <empty> (<DEFAULT>)
+	CERTIFICATE PASSWORD:     <empty> (<DEFAULT>)
+	USE INTERNAL SSL:         False (<DEFAULT>)
+	SSL TARGET HOST:          n/a (<DEFAULT>)
+	SSL VALIDATE SERVER:      True (<DEFAULT>)
+	AUTHENTICATION TYPE:      internal (<DEFAULT>)
+	AUTHENTICATION CONFIG:    <empty> (<DEFAULT>)
+	PREPARE TIMEOUT MS:       2000 (<DEFAULT>)
+	COMMIT TIMEOUT MS:        2000 (<DEFAULT>)
+	UNSAFE DISABLE FLUSH TO DISK: False (<DEFAULT>)
+	BETTER ORDERING:          False (<DEFAULT>)
+	UNSAFE IGNORE HARD DELETE: False (<DEFAULT>)
+	INDEX CACHE DEPTH:        16 (<DEFAULT>)
+	GOSSIP INTERVAL MS:       1000 (<DEFAULT>)
+	GOSSIP ALLOWED DIFFERENCE MS: 60000 (<DEFAULT>)
+	GOSSIP TIMEOUT MS:        500 (<DEFAULT>)
+	ENABLE HISTOGRAMS:        False (<DEFAULT>)
+	LOG HTTP REQUESTS:        False (<DEFAULT>)
+
+[PID:22371:001 2016.06.08 04:29:36.564 INFO  ProgramBase`1       ] Quorum size set to 1
+[PID:22371:001 2016.06.08 04:29:36.570 INFO  ProgramBase`1       ] Cannot find plugins path: plugins
+[PID:22371:001 2016.06.08 04:29:36.617 INFO  ProgramBase`1       ] INSTANCE ID:              954be521-0b18-4727-8a3f-04a9b84661f6
+[PID:22371:001 2016.06.08 04:29:36.618 INFO  ProgramBase`1       ] DATABASE:                 data
+[PID:22371:001 2016.06.08 04:29:36.618 INFO  ProgramBase`1       ] WRITER CHECKPOINT:        0 (0x0)
+[PID:22371:001 2016.06.08 04:29:36.618 INFO  ProgramBase`1       ] CHASER CHECKPOINT:        0 (0x0)
+[PID:22371:001 2016.06.08 04:29:36.618 INFO  ProgramBase`1       ] EPOCH CHECKPOINT:         -1 (0xFFFFFFFFFFFFFFFF)
+[PID:22371:001 2016.06.08 04:29:36.619 INFO  ProgramBase`1       ] TRUNCATE CHECKPOINT:      -1 (0xFFFFFFFFFFFFFFFF)
+[PID:22371:001 2016.06.08 04:29:36.806 TRACE MessageHierarchy    ] MessageHierarchy initialization took 00:00:00.1411572.
+[PID:22371:001 2016.06.08 04:29:36.955 INFO  MiniWeb             ] Starting MiniWeb for /web/es/js/projections ==> projections
+[PID:22371:001 2016.06.08 04:29:36.955 INFO  MiniWeb             ] Starting MiniWeb for /web/es/js/projections/v8/Prelude ==> Prelude
+[PID:22371:001 2016.06.08 04:29:36.956 TRACE MiniWeb             ] Binding MiniWeb to /web/es/js/projections/{*remaining_path}
+[PID:22371:001 2016.06.08 04:29:36.956 TRACE MiniWeb             ] Binding MiniWeb to /web/es/js/projections/v8/Prelude/{*remaining_path}
+[PID:22371:001 2016.06.08 04:29:36.968 INFO  MiniWeb             ] Starting MiniWeb for /web ==> clusternode-web
+[PID:22371:001 2016.06.08 04:29:36.969 TRACE MiniWeb             ] Binding MiniWeb to /web/{*remaining_path}
+[PID:22371:024 2016.06.08 04:29:36.985 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] SYSTEM INIT...
+[PID:22371:024 2016.06.08 04:29:37.008 INFO  TcpServerListener   ] Starting Normal TCP listening on TCP endpoint: 127.0.0.1:1113.
+[PID:22371:027 2016.06.08 04:29:37.024 INFO  IndexCommitter      ] TableIndex initialization...
+[PID:22371:027 2016.06.08 04:29:37.029 INFO  IndexCommitter      ] ReadIndex building...
+[PID:22371:027 2016.06.08 04:29:37.031 DEBUG IndexCommitter      ] ReadIndex rebuilding done: total processed 0 records, time elapsed: 00:00:00.0010150.
+[PID:22371:024 2016.06.08 04:29:37.050 INFO  HttpAsyncServer     ] Starting HTTP server on [http://127.0.0.1:2113/,http://localhost:2113/]...
+[PID:22371:024 2016.06.08 04:29:37.060 INFO  HttpAsyncServer     ] HTTP server is up and listening on [http://127.0.0.1:2113/,http://localhost:2113/]
+[PID:22371:024 2016.06.08 04:29:37.076 TRACE InMemoryBus         ] SLOW BUS MSG [MainBus]: SystemInit - 48ms. Handler: HttpService.
+[PID:22371:024 2016.06.08 04:29:37.093 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [MainQueue]: SystemInit - 105ms. Q: 0/6.
+[PID:22371:024 2016.06.08 04:29:37.093 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] Service 'StorageReader' initialized.
+[PID:22371:024 2016.06.08 04:29:37.093 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] Service 'StorageWriter' initialized.
+[PID:22371:024 2016.06.08 04:29:37.094 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] Service 'StorageChaser' initialized.
+[PID:22371:024 2016.06.08 04:29:37.095 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] SYSTEM START...
+[PID:22371:024 2016.06.08 04:29:37.099 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] IS UNKNOWN...
+[PID:22371:008 2016.06.08 04:29:37.120 DEBUG PersistentSubscripti] Subscriptions received state change to Unknown stopping listening.
+[PID:22371:024 2016.06.08 04:29:37.134 DEBUG ElectionsService    ] ELECTIONS: STARTING ELECTIONS.
+[PID:22371:024 2016.06.08 04:29:37.134 DEBUG ElectionsService    ] ELECTIONS: (V=0) SHIFT TO LEADER ELECTION.
+[PID:22371:024 2016.06.08 04:29:37.134 DEBUG ElectionsService    ] ELECTIONS: (V=0) VIEWCHANGE FROM [127.0.0.1:2112, {954be521-0b18-4727-8a3f-04a9b84661f6}].
+[PID:22371:024 2016.06.08 04:29:37.135 DEBUG ElectionsService    ] ELECTIONS: (V=0) MAJORITY OF VIEWCHANGE.
+[PID:22371:024 2016.06.08 04:29:37.135 DEBUG ElectionsService    ] ELECTIONS: (V=0) SHIFT TO PREPARE PHASE.
+[PID:22371:024 2016.06.08 04:29:37.136 DEBUG ElectionsService    ] ELECTIONS: (V=0) PREPARE_OK FROM [127.0.0.1:2112,{954be521-0b18-4727-8a3f-04a9b84661f6}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}).
+[PID:22371:024 2016.06.08 04:29:37.136 DEBUG ElectionsService    ] ELECTIONS: (V=0) SHIFT TO REG_LEADER.
+[PID:22371:024 2016.06.08 04:29:37.141 DEBUG ElectionsService    ] ELECTIONS: (V=0) SENDING PROPOSAL CANDIDATE: [127.0.0.1:2112,{954be521-0b18-4727-8a3f-04a9b84661f6}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}), ME: [127.0.0.1:2112,{954be521-0b18-4727-8a3f-04a9b84661f6}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}).
+[PID:22371:024 2016.06.08 04:29:37.142 DEBUG ElectionsService    ] ELECTIONS: (V=0) ACCEPT FROM [127.0.0.1:2112,{954be521-0b18-4727-8a3f-04a9b84661f6}] M=[127.0.0.1:2112,{954be521-0b18-4727-8a3f-04a9b84661f6}]).
+[PID:22371:024 2016.06.08 04:29:37.142 INFO  ElectionsService    ] ELECTIONS: (V=0) DONE. ELECTED MASTER = [127.0.0.1:2112,{954be521-0b18-4727-8a3f-04a9b84661f6}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}). ME=[127.0.0.1:2112,{954be521-0b18-4727-8a3f-04a9b84661f6}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}).
+[PID:22371:024 2016.06.08 04:29:37.145 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] PRE-MASTER STATE, WAITING FOR CHASER TO CATCH UP...
+[PID:22371:030 2016.06.08 04:29:37.145 DEBUG PersistentSubscripti] Subscriptions received state change to PreMaster stopping listening.
+[PID:22371:024 2016.06.08 04:29:37.146 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] IS MASTER... SPARTA!
+[PID:22371:021 2016.06.08 04:29:37.148 DEBUG PersistentSubscripti] Subscriptions Became Master so now handling subscriptions
+[PID:22371:022 2016.06.08 04:29:37.248 DEBUG EpochManager        ] === Writing E0@0:{c5664cf8-1461-4115-8cdf-4c560964b1db} (previous epoch at -1).
+[PID:22371:022 2016.06.08 04:29:37.250 DEBUG EpochManager        ] === Update Last Epoch E0@0:{c5664cf8-1461-4115-8cdf-4c560964b1db} (previous epoch at -1).
+[PID:22371:021 2016.06.08 04:29:37.320 TRACE MonitoringService   ] Created stats stream '$stats-127.0.0.1:2113', code = Success
+[PID:22371:024 2016.06.08 04:29:37.335 INFO  UserManagementServic] 'admin' user account has been created.
+[PID:22371:024 2016.06.08 04:29:37.336 INFO  UserManagementServic] 'ops' user account has been created.
+[PID:22371:024 2016.06.08 04:29:37.336 INFO  UserManagementServic] 'admin' user added to $users.
+[PID:22371:024 2016.06.08 04:29:37.337 INFO  UserManagementServic] 'ops' user added to $users.
+[PID:22371:032 2016.06.08 04:29:37.357 DEBUG ProjectionCoreCoordi] PROJECTIONS: Starting Projections Core Coordinator. (Node State : Master)
+[PID:22371:032 2016.06.08 04:29:37.378 DEBUG ProjectionManager   ] PROJECTIONS: Starting Projections Manager. (Node State : Master)
+[PID:22371:033 2016.06.08 04:29:37.391 DEBUG ProjectionCoreServic] PROJECTIONS: Starting Projection Core Reader (reads from $projections-$22337754dec04ffb9fd5a8218011bf38)
+[PID:22371:032 2016.06.08 04:29:37.411 DEBUG ProjectionManagerRes] PROJECTIONS: Starting Projection Manager Response Reader (reads from $projections-$master)
+[PID:22371:033 2016.06.08 04:29:37.428 DEBUG ResponseWriter      ] PROJECTIONS: Resetting Master Writer
+[PID:22371:033 2016.06.08 04:29:37.428 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [Projection Core #0]: StartCore - 67ms. Q: 1/6.
+[PID:22371:033 2016.06.08 04:29:37.436 DEBUG ProjectionCoreServic] Starting read control from 0
+[PID:22371:033 2016.06.08 04:29:37.444 DEBUG ProjectionCoreServic] PROJECTIONS: Finished Starting Projection Core Reader (reads from $projections-$22337754dec04ffb9fd5a8218011bf38)
+[PID:22371:032 2016.06.08 04:29:37.462 DEBUG MultiStreamMessageWr] PROJECTIONS: Resetting Worker Writer
+[PID:22371:032 2016.06.08 04:29:37.462 TRACE InMemoryBus         ] SLOW BUS MSG [manager input bus]: Starting - 49ms. Handler: ProjectionManagerCommandWriter.
+[PID:22371:032 2016.06.08 04:29:37.462 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [Projections Master]: Starting - 84ms. Q: 0/3.
+[PID:22371:032 2016.06.08 04:29:37.465 DEBUG ProjectionManager   ] PROJECTIONS: Reading/Starting Existing Projections from $projections-$all
+[PID:22371:032 2016.06.08 04:29:37.466 DEBUG ProjectionManagerRes] PROJECTIONS: Finished Starting Projection Manager Response Reader (reads from $projections-$master)
+[PID:22371:032 2016.06.08 04:29:37.471 DEBUG ProjectionManager   ] PROJECTIONS: No projections were found in $projections-$all, starting from empty stream
+[PID:22371:032 2016.06.08 04:29:37.482 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 1@$response-reader-starting
+[PID:22371:032 2016.06.08 04:29:37.484 DEBUG ProjectionManager   ] Adding projection 089da43f-6dae-418d-b340-50a48f7b46e5@$streams to list
+[PID:22371:032 2016.06.08 04:29:37.487 DEBUG ProjectionManager   ] Adding projection 4c918956-ecae-4bf3-8ad2-e588c1e8995f@$stream_by_category to list
+[PID:22371:032 2016.06.08 04:29:37.487 DEBUG ProjectionManager   ] Adding projection a8bc68f2-5c66-4392-a986-818d90cfb3d9@$by_category to list
+[PID:22371:032 2016.06.08 04:29:37.489 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:37.495 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:37.495 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:37.495 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 2@$projection-worker-started
+[PID:22371:033 2016.06.08 04:29:37.497 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 0@$create-and-prepare
+[PID:22371:032 2016.06.08 04:29:37.498 DEBUG ProjectionManager   ] Adding projection 86f8ed38-c5c8-4c61-a5f0-cf67f40d0bff@$by_event_type to list
+[PID:22371:032 2016.06.08 04:29:37.498 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:37.499 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:032 2016.06.08 04:29:37.499 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:032 2016.06.08 04:29:37.500 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:032 2016.06.08 04:29:37.500 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:033 2016.06.08 04:29:37.532 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.532 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 1@$create-and-prepare
+[PID:22371:033 2016.06.08 04:29:37.533 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 2@$create-and-prepare
+[PID:22371:033 2016.06.08 04:29:37.533 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 3@$create-and-prepare
+[PID:22371:032 2016.06.08 04:29:37.543 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 4@$prepared
+[PID:22371:033 2016.06.08 04:29:37.545 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.545 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.545 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.545 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:033 2016.06.08 04:29:37.547 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:033 2016.06.08 04:29:37.547 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:033 2016.06.08 04:29:37.547 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:032 2016.06.08 04:29:37.552 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 6@$prepared
+[PID:22371:032 2016.06.08 04:29:37.552 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 8@$prepared
+[PID:22371:032 2016.06.08 04:29:37.552 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 10@$prepared
+[PID:22371:032 2016.06.08 04:29:37.553 INFO  ProjectionManager   ] '$streams' projection source has been written
+[PID:22371:032 2016.06.08 04:29:37.554 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:37.556 INFO  ProjectionManager   ] '$stream_by_category' projection source has been written
+[PID:22371:033 2016.06.08 04:29:37.556 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 4@$load-stopped
+[PID:22371:032 2016.06.08 04:29:37.556 INFO  ProjectionManager   ] '$by_category' projection source has been written
+[PID:22371:032 2016.06.08 04:29:37.556 INFO  ProjectionManager   ] '$by_event_type' projection source has been written
+[PID:22371:032 2016.06.08 04:29:37.557 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:37.557 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:37.557 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:37.557 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $load-stopped
+[PID:22371:032 2016.06.08 04:29:37.559 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $load-stopped
+[PID:22371:032 2016.06.08 04:29:37.559 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $load-stopped
+[PID:22371:032 2016.06.08 04:29:37.559 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $load-stopped
+[PID:22371:033 2016.06.08 04:29:37.563 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.563 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 5@$load-stopped
+[PID:22371:033 2016.06.08 04:29:37.563 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 6@$load-stopped
+[PID:22371:033 2016.06.08 04:29:37.563 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 7@$load-stopped
+[PID:22371:033 2016.06.08 04:29:37.565 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:22371:032 2016.06.08 04:29:37.565 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 13@$stopped
+[PID:22371:033 2016.06.08 04:29:37.565 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.565 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.565 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:37.566 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:22371:032 2016.06.08 04:29:37.566 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 19@$stopped
+[PID:22371:033 2016.06.08 04:29:37.566 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:22371:032 2016.06.08 04:29:37.566 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 22@$stopped
+[PID:22371:033 2016.06.08 04:29:37.566 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:22371:032 2016.06.08 04:29:37.567 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 25@$stopped
+[PID:22371:032 2016.06.08 04:29:42.407 INFO  ProjectionManager   ] Enabling '$by_category' projection
+[PID:22371:032 2016.06.08 04:29:42.408 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.408 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:42.409 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $dispose
+[PID:22371:033 2016.06.08 04:29:42.409 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 8@$dispose
+[PID:22371:032 2016.06.08 04:29:42.409 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.410 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 9@$create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.410 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:42.411 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:032 2016.06.08 04:29:42.411 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 28@$prepared
+[PID:22371:032 2016.06.08 04:29:42.411 INFO  ProjectionManager   ] '$by_category' projection source has been written
+[PID:22371:032 2016.06.08 04:29:42.413 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.414 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $start
+[PID:22371:033 2016.06.08 04:29:42.414 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 10@$start
+[PID:22371:033 2016.06.08 04:29:42.421 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.422 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 31@$started
+[PID:22371:033 2016.06.08 04:29:42.431 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started
+[PID:22371:032 2016.06.08 04:29:42.450 INFO  ProjectionManager   ] Enabling '$by_event_type' projection
+[PID:22371:032 2016.06.08 04:29:42.450 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.450 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:42.450 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $dispose
+[PID:22371:033 2016.06.08 04:29:42.450 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 11@$dispose
+[PID:22371:032 2016.06.08 04:29:42.452 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.452 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 12@$create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.452 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:42.453 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:032 2016.06.08 04:29:42.453 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 35@$prepared
+[PID:22371:032 2016.06.08 04:29:42.453 INFO  ProjectionManager   ] '$by_event_type' projection source has been written
+[PID:22371:032 2016.06.08 04:29:42.453 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.453 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $start
+[PID:22371:033 2016.06.08 04:29:42.453 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 13@$start
+[PID:22371:033 2016.06.08 04:29:42.460 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:42.461 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 38@$started
+[PID:22371:033 2016.06.08 04:29:42.464 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started
+[PID:22371:032 2016.06.08 04:29:42.477 INFO  ProjectionManager   ] Enabling '$stream_by_category' projection
+[PID:22371:032 2016.06.08 04:29:42.477 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.477 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:42.478 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $dispose
+[PID:22371:033 2016.06.08 04:29:42.478 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 14@$dispose
+[PID:22371:032 2016.06.08 04:29:42.478 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.478 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 15@$create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.479 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:42.479 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:032 2016.06.08 04:29:42.479 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 42@$prepared
+[PID:22371:032 2016.06.08 04:29:42.481 INFO  ProjectionManager   ] '$stream_by_category' projection source has been written
+[PID:22371:032 2016.06.08 04:29:42.481 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.481 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $start
+[PID:22371:033 2016.06.08 04:29:42.481 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 16@$start
+[PID:22371:033 2016.06.08 04:29:42.481 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:42.483 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started
+[PID:22371:032 2016.06.08 04:29:42.483 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 45@$started
+[PID:22371:032 2016.06.08 04:29:42.501 INFO  ProjectionManager   ] Enabling '$streams' projection
+[PID:22371:032 2016.06.08 04:29:42.501 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.501 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: True
+[PID:22371:032 2016.06.08 04:29:42.501 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $dispose
+[PID:22371:033 2016.06.08 04:29:42.501 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 17@$dispose
+[PID:22371:032 2016.06.08 04:29:42.501 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.501 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 18@$create-and-prepare
+[PID:22371:033 2016.06.08 04:29:42.503 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:22371:033 2016.06.08 04:29:42.503 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:22371:032 2016.06.08 04:29:42.503 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 49@$prepared
+[PID:22371:032 2016.06.08 04:29:42.503 INFO  ProjectionManager   ] '$streams' projection source has been written
+[PID:22371:032 2016.06.08 04:29:42.504 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$22337754-dec0-4ffb-9fd5-a8218011bf38. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.504 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$22337754dec04ffb9fd5a8218011bf38: $start
+[PID:22371:033 2016.06.08 04:29:42.504 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 19@$start
+[PID:22371:033 2016.06.08 04:29:42.508 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: False
+[PID:22371:032 2016.06.08 04:29:42.509 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 52@$started
+[PID:22371:033 2016.06.08 04:29:42.509 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started
+[PID:22371:018 2016.06.08 08:18:47.042 TRACE InMemoryBus         ] SLOW BUS MSG [PersistentSubscriptionsBus]: PersistentSubscriptionTimerTick - 102ms. Handler: PersistentSubscriptionService.
+[PID:22371:024 2016.06.08 17:20:27.803 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [MainQueue]: RequestManagerTimerTick - 69ms. Q: 1/5.
+[PID:22371:025 2016.06.08 17:26:48.384 TRACE InMemoryBus         ] SLOW BUS MSG [PersistentSubscriptionsBus]: PersistentSubscriptionTimerTick - 60ms. Handler: PersistentSubscriptionService.
+[PID:22371:021 2016.06.08 18:06:53.521 TRACE InMemoryBus         ] SLOW BUS MSG [SubscriptionsBus]: CheckPollTimeout - 101ms. Handler: SubscriptionsService.
+[PID:22371:014 2016.06.08 18:08:31.601 TRACE InMemoryBus         ] SLOW BUS MSG [SubscriptionsBus]: CheckPollTimeout - 103ms. Handler: SubscriptionsService.
+[PID:29351:001 2016.06.08 21:00:41.401 INFO  ProgramBase`1       ] 
+ES VERSION:               3.6.1 (release-v3.6.1/7bea05d7670231fb4580625d3ffca16c77b166fa, Sat, 30 Apr 2016 19:36:25 +0300)
+OS:                       MacOS (Unix 14.3.0.0)
+RUNTIME:                  3.12.1 (tarball) (64-bit)
+GC:                       2 GENERATIONS
+LOGS:                     /Users/sbellware/tools/EventStore-OSS-MacOSX-v3.6.1/logs
+
+MODIFIED OPTIONS:
+
+	RUN PROJECTIONS:          System (Command Line)
+	MEM DB:                   True (Command Line)
+
+DEFAULT OPTIONS:
+
+	HELP:                     False (<DEFAULT>)
+	VERSION:                  False (<DEFAULT>)
+	LOG:                      logs (<DEFAULT>)
+	CONFIG:                   <empty> (<DEFAULT>)
+	DEFINES:                  <empty> (<DEFAULT>)
+	WHAT IF:                  False (<DEFAULT>)
+	START STANDARD PROJECTIONS: False (<DEFAULT>)
+	DISABLE HTTP CACHING:     False (<DEFAULT>)
+	MONO MIN THREADPOOL SIZE: 10 (<DEFAULT>)
+	INT IP:                   127.0.0.1 (<DEFAULT>)
+	EXT IP:                   127.0.0.1 (<DEFAULT>)
+	INT HTTP PORT:            2112 (<DEFAULT>)
+	EXT HTTP PORT:            2113 (<DEFAULT>)
+	INT TCP PORT:             1112 (<DEFAULT>)
+	INT SECURE TCP PORT:      0 (<DEFAULT>)
+	EXT TCP PORT:             1113 (<DEFAULT>)
+	EXT SECURE TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	EXT SECURE TCP PORT:      0 (<DEFAULT>)
+	EXT IP ADVERTISE AS:      <empty> (<DEFAULT>)
+	EXT TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	EXT HTTP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT IP ADVERTISE AS:      <empty> (<DEFAULT>)
+	INT SECURE TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT TCP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT HTTP PORT ADVERTISE AS: 0 (<DEFAULT>)
+	INT TCP HEARTBEAT TIMEOUT: 700 (<DEFAULT>)
+	EXT TCP HEARTBEAT TIMEOUT: 1000 (<DEFAULT>)
+	INT TCP HEARTBEAT INTERVAL: 700 (<DEFAULT>)
+	EXT TCP HEARTBEAT INTERVAL: 2000 (<DEFAULT>)
+	FORCE:                    False (<DEFAULT>)
+	CLUSTER SIZE:             1 (<DEFAULT>)
+	NODE PRIORITY:            0 (<DEFAULT>)
+	MIN FLUSH DELAY MS:       2 (<DEFAULT>)
+	COMMIT COUNT:             -1 (<DEFAULT>)
+	PREPARE COUNT:            -1 (<DEFAULT>)
+	ADMIN ON EXT:             True (<DEFAULT>)
+	STATS ON EXT:             True (<DEFAULT>)
+	GOSSIP ON EXT:            True (<DEFAULT>)
+	DISABLE SCAVENGE MERGING: False (<DEFAULT>)
+	SCAVENGE HISTORY MAX AGE: 30 (<DEFAULT>)
+	DISCOVER VIA DNS:         True (<DEFAULT>)
+	CLUSTER DNS:              fake.dns (<DEFAULT>)
+	CLUSTER GOSSIP PORT:      30777 (<DEFAULT>)
+	GOSSIP SEED:              <empty> (<DEFAULT>)
+	STATS PERIOD SEC:         30 (<DEFAULT>)
+	CACHED CHUNKS:            -1 (<DEFAULT>)
+	CHUNKS CACHE SIZE:        536871424 (<DEFAULT>)
+	MAX MEM TABLE SIZE:       1000000 (<DEFAULT>)
+	DB:                       data (<DEFAULT>)
+	INDEX:                    <empty> (<DEFAULT>)
+	SKIP DB VERIFY:           False (<DEFAULT>)
+	PROJECTION THREADS:       3 (<DEFAULT>)
+	WORKER THREADS:           5 (<DEFAULT>)
+	INT HTTP PREFIXES:        <empty> (<DEFAULT>)
+	EXT HTTP PREFIXES:        <empty> (<DEFAULT>)
+	ENABLE TRUSTED AUTH:      False (<DEFAULT>)
+	ADD INTERFACE PREFIXES:   True (<DEFAULT>)
+	CERTIFICATE STORE LOCATION: <empty> (<DEFAULT>)
+	CERTIFICATE STORE NAME:   <empty> (<DEFAULT>)
+	CERTIFICATE SUBJECT NAME: <empty> (<DEFAULT>)
+	CERTIFICATE THUMBPRINT:   <empty> (<DEFAULT>)
+	CERTIFICATE FILE:         <empty> (<DEFAULT>)
+	CERTIFICATE PASSWORD:     <empty> (<DEFAULT>)
+	USE INTERNAL SSL:         False (<DEFAULT>)
+	SSL TARGET HOST:          n/a (<DEFAULT>)
+	SSL VALIDATE SERVER:      True (<DEFAULT>)
+	AUTHENTICATION TYPE:      internal (<DEFAULT>)
+	AUTHENTICATION CONFIG:    <empty> (<DEFAULT>)
+	PREPARE TIMEOUT MS:       2000 (<DEFAULT>)
+	COMMIT TIMEOUT MS:        2000 (<DEFAULT>)
+	UNSAFE DISABLE FLUSH TO DISK: False (<DEFAULT>)
+	BETTER ORDERING:          False (<DEFAULT>)
+	UNSAFE IGNORE HARD DELETE: False (<DEFAULT>)
+	INDEX CACHE DEPTH:        16 (<DEFAULT>)
+	GOSSIP INTERVAL MS:       1000 (<DEFAULT>)
+	GOSSIP ALLOWED DIFFERENCE MS: 60000 (<DEFAULT>)
+	GOSSIP TIMEOUT MS:        500 (<DEFAULT>)
+	ENABLE HISTOGRAMS:        False (<DEFAULT>)
+	LOG HTTP REQUESTS:        False (<DEFAULT>)
+
+[PID:29351:001 2016.06.08 21:00:41.443 INFO  ProgramBase`1       ] Quorum size set to 1
+[PID:29351:001 2016.06.08 21:00:41.450 INFO  ProgramBase`1       ] Cannot find plugins path: plugins
+[PID:29351:001 2016.06.08 21:00:41.488 INFO  ProgramBase`1       ] INSTANCE ID:              55a1ccb1-9572-4a0e-af56-b880522ff570
+[PID:29351:001 2016.06.08 21:00:41.490 INFO  ProgramBase`1       ] DATABASE:                 data
+[PID:29351:001 2016.06.08 21:00:41.490 INFO  ProgramBase`1       ] WRITER CHECKPOINT:        0 (0x0)
+[PID:29351:001 2016.06.08 21:00:41.490 INFO  ProgramBase`1       ] CHASER CHECKPOINT:        0 (0x0)
+[PID:29351:001 2016.06.08 21:00:41.491 INFO  ProgramBase`1       ] EPOCH CHECKPOINT:         -1 (0xFFFFFFFFFFFFFFFF)
+[PID:29351:001 2016.06.08 21:00:41.493 INFO  ProgramBase`1       ] TRUNCATE CHECKPOINT:      -1 (0xFFFFFFFFFFFFFFFF)
+[PID:29351:001 2016.06.08 21:00:41.699 TRACE MessageHierarchy    ] MessageHierarchy initialization took 00:00:00.1531215.
+[PID:29351:001 2016.06.08 21:00:41.860 INFO  MiniWeb             ] Starting MiniWeb for /web/es/js/projections ==> projections
+[PID:29351:001 2016.06.08 21:00:41.860 INFO  MiniWeb             ] Starting MiniWeb for /web/es/js/projections/v8/Prelude ==> Prelude
+[PID:29351:001 2016.06.08 21:00:41.860 TRACE MiniWeb             ] Binding MiniWeb to /web/es/js/projections/{*remaining_path}
+[PID:29351:001 2016.06.08 21:00:41.861 TRACE MiniWeb             ] Binding MiniWeb to /web/es/js/projections/v8/Prelude/{*remaining_path}
+[PID:29351:001 2016.06.08 21:00:41.874 INFO  MiniWeb             ] Starting MiniWeb for /web ==> clusternode-web
+[PID:29351:001 2016.06.08 21:00:41.875 TRACE MiniWeb             ] Binding MiniWeb to /web/{*remaining_path}
+[PID:29351:024 2016.06.08 21:00:41.902 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] SYSTEM INIT...
+[PID:29351:024 2016.06.08 21:00:41.927 INFO  TcpServerListener   ] Starting Normal TCP listening on TCP endpoint: 127.0.0.1:1113.
+[PID:29351:027 2016.06.08 21:00:41.947 INFO  IndexCommitter      ] TableIndex initialization...
+[PID:29351:027 2016.06.08 21:00:41.953 INFO  IndexCommitter      ] ReadIndex building...
+[PID:29351:027 2016.06.08 21:00:41.955 DEBUG IndexCommitter      ] ReadIndex rebuilding done: total processed 0 records, time elapsed: 00:00:00.0015300.
+[PID:29351:024 2016.06.08 21:00:41.976 INFO  HttpAsyncServer     ] Starting HTTP server on [http://127.0.0.1:2113/,http://localhost:2113/]...
+[PID:29351:024 2016.06.08 21:00:41.982 INFO  HttpAsyncServer     ] HTTP server is up and listening on [http://127.0.0.1:2113/,http://localhost:2113/]
+[PID:29351:024 2016.06.08 21:00:41.999 TRACE InMemoryBus         ] SLOW BUS MSG [MainBus]: SystemInit - 52ms. Handler: HttpService.
+[PID:29351:024 2016.06.08 21:00:42.021 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [MainQueue]: SystemInit - 124ms. Q: 0/6.
+[PID:29351:024 2016.06.08 21:00:42.021 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] Service 'StorageReader' initialized.
+[PID:29351:024 2016.06.08 21:00:42.021 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] Service 'StorageWriter' initialized.
+[PID:29351:024 2016.06.08 21:00:42.021 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] Service 'StorageChaser' initialized.
+[PID:29351:024 2016.06.08 21:00:42.023 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] SYSTEM START...
+[PID:29351:024 2016.06.08 21:00:42.026 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] IS UNKNOWN...
+[PID:29351:012 2016.06.08 21:00:42.049 DEBUG PersistentSubscripti] Subscriptions received state change to Unknown stopping listening.
+[PID:29351:024 2016.06.08 21:00:42.069 DEBUG ElectionsService    ] ELECTIONS: STARTING ELECTIONS.
+[PID:29351:024 2016.06.08 21:00:42.069 DEBUG ElectionsService    ] ELECTIONS: (V=0) SHIFT TO LEADER ELECTION.
+[PID:29351:024 2016.06.08 21:00:42.069 DEBUG ElectionsService    ] ELECTIONS: (V=0) VIEWCHANGE FROM [127.0.0.1:2112, {55a1ccb1-9572-4a0e-af56-b880522ff570}].
+[PID:29351:024 2016.06.08 21:00:42.071 DEBUG ElectionsService    ] ELECTIONS: (V=0) MAJORITY OF VIEWCHANGE.
+[PID:29351:024 2016.06.08 21:00:42.072 DEBUG ElectionsService    ] ELECTIONS: (V=0) SHIFT TO PREPARE PHASE.
+[PID:29351:024 2016.06.08 21:00:42.073 DEBUG ElectionsService    ] ELECTIONS: (V=0) PREPARE_OK FROM [127.0.0.1:2112,{55a1ccb1-9572-4a0e-af56-b880522ff570}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}).
+[PID:29351:024 2016.06.08 21:00:42.077 DEBUG ElectionsService    ] ELECTIONS: (V=0) SHIFT TO REG_LEADER.
+[PID:29351:024 2016.06.08 21:00:42.086 DEBUG ElectionsService    ] ELECTIONS: (V=0) SENDING PROPOSAL CANDIDATE: [127.0.0.1:2112,{55a1ccb1-9572-4a0e-af56-b880522ff570}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}), ME: [127.0.0.1:2112,{55a1ccb1-9572-4a0e-af56-b880522ff570}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}).
+[PID:29351:024 2016.06.08 21:00:42.086 DEBUG ElectionsService    ] ELECTIONS: (V=0) ACCEPT FROM [127.0.0.1:2112,{55a1ccb1-9572-4a0e-af56-b880522ff570}] M=[127.0.0.1:2112,{55a1ccb1-9572-4a0e-af56-b880522ff570}]).
+[PID:29351:024 2016.06.08 21:00:42.086 INFO  ElectionsService    ] ELECTIONS: (V=0) DONE. ELECTED MASTER = [127.0.0.1:2112,{55a1ccb1-9572-4a0e-af56-b880522ff570}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}). ME=[127.0.0.1:2112,{55a1ccb1-9572-4a0e-af56-b880522ff570}](L=-1,W=0,C=0,E-1@-1:{00000000-0000-0000-0000-000000000000}).
+[PID:29351:024 2016.06.08 21:00:42.088 TRACE InMemoryBus         ] SLOW BUS MSG [MainBus]: StartElections - 59ms. Handler: ElectionsService.
+[PID:29351:024 2016.06.08 21:00:42.088 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [MainQueue]: StartElections - 60ms. Q: 0/4.
+[PID:29351:024 2016.06.08 21:00:42.090 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] PRE-MASTER STATE, WAITING FOR CHASER TO CATCH UP...
+[PID:29351:018 2016.06.08 21:00:42.090 DEBUG PersistentSubscripti] Subscriptions received state change to PreMaster stopping listening.
+[PID:29351:024 2016.06.08 21:00:42.091 INFO  ClusterVNodeControll] ========== [127.0.0.1:2112] IS MASTER... SPARTA!
+[PID:29351:015 2016.06.08 21:00:42.094 DEBUG PersistentSubscripti] Subscriptions Became Master so now handling subscriptions
+[PID:29351:020 2016.06.08 21:00:42.206 DEBUG EpochManager        ] === Writing E0@0:{8515278a-3e61-4e5c-9403-5815c83cdae2} (previous epoch at -1).
+[PID:29351:020 2016.06.08 21:00:42.207 DEBUG EpochManager        ] === Update Last Epoch E0@0:{8515278a-3e61-4e5c-9403-5815c83cdae2} (previous epoch at -1).
+[PID:29351:007 2016.06.08 21:00:42.287 TRACE MonitoringService   ] Created stats stream '$stats-127.0.0.1:2113', code = Success
+[PID:29351:024 2016.06.08 21:00:42.305 INFO  UserManagementServic] 'admin' user account has been created.
+[PID:29351:024 2016.06.08 21:00:42.306 INFO  UserManagementServic] 'ops' user account has been created.
+[PID:29351:024 2016.06.08 21:00:42.307 INFO  UserManagementServic] 'admin' user added to $users.
+[PID:29351:024 2016.06.08 21:00:42.307 INFO  UserManagementServic] 'ops' user added to $users.
+[PID:29351:032 2016.06.08 21:00:42.328 DEBUG ProjectionCoreCoordi] PROJECTIONS: Starting Projections Core Coordinator. (Node State : Master)
+[PID:29351:032 2016.06.08 21:00:42.349 DEBUG ProjectionManager   ] PROJECTIONS: Starting Projections Manager. (Node State : Master)
+[PID:29351:033 2016.06.08 21:00:42.364 DEBUG ProjectionCoreServic] PROJECTIONS: Starting Projection Core Reader (reads from $projections-$b12dcb4741184ac6bc0ddd95af692d1d)
+[PID:29351:032 2016.06.08 21:00:42.386 DEBUG ProjectionManagerRes] PROJECTIONS: Starting Projection Manager Response Reader (reads from $projections-$master)
+[PID:29351:033 2016.06.08 21:00:42.409 DEBUG ResponseWriter      ] PROJECTIONS: Resetting Master Writer
+[PID:29351:033 2016.06.08 21:00:42.410 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [Projection Core #0]: StartCore - 77ms. Q: 1/6.
+[PID:29351:033 2016.06.08 21:00:42.417 DEBUG ProjectionCoreServic] Starting read control from 0
+[PID:29351:033 2016.06.08 21:00:42.424 DEBUG ProjectionCoreServic] PROJECTIONS: Finished Starting Projection Core Reader (reads from $projections-$b12dcb4741184ac6bc0ddd95af692d1d)
+[PID:29351:032 2016.06.08 21:00:42.441 DEBUG MultiStreamMessageWr] PROJECTIONS: Resetting Worker Writer
+[PID:29351:032 2016.06.08 21:00:42.441 TRACE InMemoryBus         ] SLOW BUS MSG [manager input bus]: Starting - 53ms. Handler: ProjectionManagerCommandWriter.
+[PID:29351:032 2016.06.08 21:00:42.442 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [Projections Master]: Starting - 91ms. Q: 0/3.
+[PID:29351:032 2016.06.08 21:00:42.445 DEBUG ProjectionManager   ] PROJECTIONS: Reading/Starting Existing Projections from $projections-$all
+[PID:29351:032 2016.06.08 21:00:42.446 DEBUG ProjectionManagerRes] PROJECTIONS: Finished Starting Projection Manager Response Reader (reads from $projections-$master)
+[PID:29351:032 2016.06.08 21:00:42.449 DEBUG ProjectionManager   ] PROJECTIONS: No projections were found in $projections-$all, starting from empty stream
+[PID:29351:032 2016.06.08 21:00:42.456 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 1@$response-reader-starting
+[PID:29351:032 2016.06.08 21:00:42.459 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 2@$projection-worker-started
+[PID:29351:032 2016.06.08 21:00:42.464 DEBUG ProjectionManager   ] Adding projection 8c56e2f2-b628-4097-b7a5-7379c477549c@$streams to list
+[PID:29351:032 2016.06.08 21:00:42.467 DEBUG ProjectionManager   ] Adding projection 02606294-13f1-416d-9f7d-7b68d22198b7@$by_category to list
+[PID:29351:032 2016.06.08 21:00:42.467 DEBUG ProjectionManager   ] Adding projection e1058101-5ae2-4ef3-a049-979ab01a4dd4@$stream_by_category to list
+[PID:29351:032 2016.06.08 21:00:42.469 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:42.474 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:42.474 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:42.474 DEBUG ProjectionManager   ] Adding projection 605381cc-b4bb-4218-a447-7127d4fd5e50@$by_event_type to list
+[PID:29351:032 2016.06.08 21:00:42.476 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:42.476 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 0@$create-and-prepare
+[PID:29351:032 2016.06.08 21:00:42.476 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:032 2016.06.08 21:00:42.476 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:032 2016.06.08 21:00:42.477 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:032 2016.06.08 21:00:42.477 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:033 2016.06.08 21:00:42.522 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:42.523 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 1@$create-and-prepare
+[PID:29351:033 2016.06.08 21:00:42.525 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 2@$create-and-prepare
+[PID:29351:033 2016.06.08 21:00:42.525 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 3@$create-and-prepare
+[PID:29351:033 2016.06.08 21:00:42.539 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:42.540 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 4@$prepared
+[PID:29351:033 2016.06.08 21:00:42.540 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:42.540 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:42.541 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:033 2016.06.08 21:00:42.550 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:033 2016.06.08 21:00:42.550 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:032 2016.06.08 21:00:42.550 INFO  ProjectionManager   ] '$streams' projection source has been written
+[PID:29351:033 2016.06.08 21:00:42.550 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:032 2016.06.08 21:00:42.550 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:42.552 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 6@$prepared
+[PID:29351:033 2016.06.08 21:00:42.552 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 4@$load-stopped
+[PID:29351:032 2016.06.08 21:00:42.553 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 8@$prepared
+[PID:29351:032 2016.06.08 21:00:42.553 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 10@$prepared
+[PID:29351:032 2016.06.08 21:00:42.555 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $load-stopped
+[PID:29351:032 2016.06.08 21:00:42.555 INFO  ProjectionManager   ] '$by_category' projection source has been written
+[PID:29351:032 2016.06.08 21:00:42.556 INFO  ProjectionManager   ] '$stream_by_category' projection source has been written
+[PID:29351:032 2016.06.08 21:00:42.556 INFO  ProjectionManager   ] '$by_event_type' projection source has been written
+[PID:29351:032 2016.06.08 21:00:42.556 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:42.556 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:42.556 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $load-stopped to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:42.558 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $load-stopped
+[PID:29351:032 2016.06.08 21:00:42.558 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $load-stopped
+[PID:29351:032 2016.06.08 21:00:42.558 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $load-stopped
+[PID:29351:033 2016.06.08 21:00:42.563 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:42.563 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 5@$load-stopped
+[PID:29351:033 2016.06.08 21:00:42.564 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 6@$load-stopped
+[PID:29351:033 2016.06.08 21:00:42.564 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 7@$load-stopped
+[PID:29351:033 2016.06.08 21:00:42.565 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:42.565 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 13@$stopped
+[PID:29351:033 2016.06.08 21:00:42.565 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:29351:033 2016.06.08 21:00:42.565 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:42.565 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $stopped to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:42.567 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:29351:032 2016.06.08 21:00:42.567 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 19@$stopped
+[PID:29351:033 2016.06.08 21:00:42.568 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:29351:033 2016.06.08 21:00:42.568 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $stopped
+[PID:29351:032 2016.06.08 21:00:42.569 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 22@$stopped
+[PID:29351:032 2016.06.08 21:00:42.569 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 25@$stopped
+[PID:29351:032 2016.06.08 21:00:46.793 INFO  ProjectionManager   ] Enabling '$by_category' projection
+[PID:29351:032 2016.06.08 21:00:46.793 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.795 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:46.796 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 8@$dispose
+[PID:29351:032 2016.06.08 21:00:46.796 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $dispose
+[PID:29351:032 2016.06.08 21:00:46.796 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.797 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 9@$create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.797 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:46.800 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:032 2016.06.08 21:00:46.800 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 28@$prepared
+[PID:29351:032 2016.06.08 21:00:46.801 INFO  ProjectionManager   ] '$by_category' projection source has been written
+[PID:29351:032 2016.06.08 21:00:46.801 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.802 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $start
+[PID:29351:033 2016.06.08 21:00:46.802 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 10@$start
+[PID:29351:033 2016.06.08 21:00:46.810 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.811 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 31@$started
+[PID:29351:033 2016.06.08 21:00:46.820 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started
+[PID:29351:032 2016.06.08 21:00:46.840 INFO  ProjectionManager   ] Enabling '$by_event_type' projection
+[PID:29351:032 2016.06.08 21:00:46.840 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.840 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:46.840 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $dispose
+[PID:29351:033 2016.06.08 21:00:46.840 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 11@$dispose
+[PID:29351:032 2016.06.08 21:00:46.840 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.840 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 12@$create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.842 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:46.842 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:032 2016.06.08 21:00:46.842 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 35@$prepared
+[PID:29351:032 2016.06.08 21:00:46.843 INFO  ProjectionManager   ] '$by_event_type' projection source has been written
+[PID:29351:032 2016.06.08 21:00:46.843 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.844 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $start
+[PID:29351:033 2016.06.08 21:00:46.844 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 13@$start
+[PID:29351:033 2016.06.08 21:00:46.852 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:46.853 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 38@$started
+[PID:29351:033 2016.06.08 21:00:46.857 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started
+[PID:29351:032 2016.06.08 21:00:46.870 INFO  ProjectionManager   ] Enabling '$stream_by_category' projection
+[PID:29351:032 2016.06.08 21:00:46.870 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.870 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:46.870 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $dispose
+[PID:29351:033 2016.06.08 21:00:46.870 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 14@$dispose
+[PID:29351:032 2016.06.08 21:00:46.870 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.870 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 15@$create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.872 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:46.872 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:032 2016.06.08 21:00:46.872 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 42@$prepared
+[PID:29351:032 2016.06.08 21:00:46.873 INFO  ProjectionManager   ] '$stream_by_category' projection source has been written
+[PID:29351:032 2016.06.08 21:00:46.873 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.874 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $start
+[PID:29351:033 2016.06.08 21:00:46.874 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 16@$start
+[PID:29351:033 2016.06.08 21:00:46.874 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:46.875 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started
+[PID:29351:032 2016.06.08 21:00:46.875 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 45@$started
+[PID:29351:032 2016.06.08 21:00:46.893 INFO  ProjectionManager   ] Enabling '$streams' projection
+[PID:29351:032 2016.06.08 21:00:46.893 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $dispose to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.894 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $create-and-prepare to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: True
+[PID:29351:032 2016.06.08 21:00:46.894 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $dispose
+[PID:29351:033 2016.06.08 21:00:46.894 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 17@$dispose
+[PID:29351:032 2016.06.08 21:00:46.895 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.895 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 18@$create-and-prepare
+[PID:29351:033 2016.06.08 21:00:46.895 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $prepared to $projections-$master. Current status of Writer: Busy: True
+[PID:29351:033 2016.06.08 21:00:46.896 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $prepared
+[PID:29351:032 2016.06.08 21:00:46.896 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 49@$prepared
+[PID:29351:032 2016.06.08 21:00:46.897 INFO  ProjectionManager   ] '$streams' projection source has been written
+[PID:29351:032 2016.06.08 21:00:46.897 DEBUG MultiStreamMessageWr] PROJECTIONS: Scheduling the writing of $start to $projections-$b12dcb47-4118-4ac6-bc0d-dd95af692d1d. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.898 DEBUG MultiStreamMessageWr] PROJECTIONS: Finished writing events to $projections-$b12dcb4741184ac6bc0ddd95af692d1d: $start
+[PID:29351:033 2016.06.08 21:00:46.898 DEBUG ProjectionCoreServic] PROJECTIONS: Command received: 19@$start
+[PID:29351:033 2016.06.08 21:00:46.899 DEBUG ResponseWriter      ] PROJECTIONS: Scheduling the writing of $started to $projections-$master. Current status of Writer: Busy: False
+[PID:29351:032 2016.06.08 21:00:46.900 DEBUG ProjectionManagerRes] PROJECTIONS: Response received: 52@$started
+[PID:29351:033 2016.06.08 21:00:46.900 DEBUG ResponseWriter      ] PROJECTIONS: Finished writing events to $projections-$master: $started

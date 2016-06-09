@@ -1,0 +1,4 @@
+[PID:12321:022 2016.05.11 03:33:25.007 TRACE InMemoryBus         ] SLOW BUS MSG [MainBus]: SendViewChangeProof - 125ms. Handler: ElectionsService.
+[PID:12321:022 2016.05.11 03:33:25.122 TRACE QueuedHandlerAutoRes] SLOW QUEUE MSG [MainQueue]: SendViewChangeProof - 847ms. Q: 4/7.
+[PID:12321:013 2016.05.11 14:40:28.723 TRACE InMemoryBus         ] SLOW BUS MSG [SubscriptionsBus]: CheckPollTimeout - 100ms. Handler: SubscriptionsService.
+[PID:12321:013 2016.05.11 22:03:43.504 TRACE InMemoryBus         ] SLOW BUS MSG [SubscriptionsBus]: CheckPollTimeout - 100ms. Handler: SubscriptionsService.
